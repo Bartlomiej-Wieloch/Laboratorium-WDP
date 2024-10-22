@@ -72,7 +72,7 @@
         {
             Console.WriteLine("\nZadanie 4\n");
 
-            double x = 0.45;
+            double x = 0.4;
             double a = 1.5;
             double b = 3.2;
             double c = 4;
