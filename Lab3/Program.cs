@@ -4,7 +4,18 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Zadanie1();
+        }
+
+        static void Zadanie1()
+        {
+            Console.WriteLine("Zadanie 1\n");
+            decimal balans = 56;
+            bool isCreditCardValid = false;
+            decimal price = 45;
+            bool canPay = balans >= price && isCreditCardValid;
+
+            Console.WriteLine(canPay);
         }
     }
 }
