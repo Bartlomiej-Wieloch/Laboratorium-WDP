@@ -10,6 +10,7 @@
             //Zadanie4();
             //Zadanie5();
             //Zadanie6();
+            Zadanie7();
 
         }
 
@@ -137,6 +138,80 @@
                     decimal sellPrice = price - (price * 0.1m);
                     Console.WriteLine($"Price: {sellPrice}");
                 }
+            }
+        }
+
+        public static void Zadanie7()
+        {
+            int decimalNumber = 11;
+            switch (decimalNumber)
+            {
+                case 0:
+                    Console.WriteLine("Rzymianie nie znali zera!");
+                    break;
+                case 1:
+                    Console.WriteLine("I");
+                    break;
+                case 2:
+                    Console.WriteLine("II");
+                    break;
+                case 3:
+                    Console.WriteLine("III");
+                    break;
+                case 4:
+                    Console.WriteLine("IV");
+                    break;
+                case 5:
+                    Console.WriteLine("V");
+                    break;
+                case 6:
+                    Console.WriteLine("VI");
+                    break;
+                case 7:
+                    Console.WriteLine("VII");
+                    break;
+                case 8:
+                    Console.WriteLine("VIII");
+                    break;
+                case 9:
+                    Console.WriteLine("IX");
+                    break;
+                case 10:
+                    Console.WriteLine("X");
+                    break;
+                case 11:
+                    Console.WriteLine("XI");
+                    break;
+                case 12:
+                    Console.WriteLine("XII");
+                    break;
+                case 13:
+                    Console.WriteLine("XIII");
+                    break;
+                case 14:
+                    Console.WriteLine("XIV");
+                    break;
+                case 15:
+                    Console.WriteLine("XV");
+                    break;
+                case 16:
+                    Console.WriteLine("XVI");
+                    break;
+                case 17:
+                    Console.WriteLine("XVII");
+                    break;
+                case 18:
+                    Console.WriteLine("XVIII");
+                    break;
+                case 19:
+                    Console.WriteLine("XIX");
+                    break;
+                case 20:
+                    Console.WriteLine("XX");
+                    break;
+                default:
+                    Console.WriteLine("Nie obsługuję liczb spoza zakresu od 1 do 20!");
+                    break;
             }
         }
     }
