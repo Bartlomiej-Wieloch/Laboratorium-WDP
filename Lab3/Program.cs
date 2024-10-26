@@ -10,7 +10,8 @@
             //Zadanie4();
             //Zadanie5();
             //Zadanie6();
-            Zadanie7();
+            //Zadanie7();
+            Zadanie8();
 
         }
 
@@ -211,6 +212,71 @@
                     break;
                 default:
                     Console.WriteLine("Nie obsługuję liczb spoza zakresu od 1 do 20!");
+                    break;
+            }
+        }
+
+        public static void Zadanie8()
+        {
+            char hex = 'F';
+            switch (hex)
+            {
+                case '0':
+                    Console.WriteLine("0");
+                    break;
+                case '1':
+                    Console.WriteLine("1");
+                    break;
+                case '2':
+                    Console.WriteLine("2");
+                    break;
+                case '3':
+                    Console.WriteLine("3");
+                    break;
+                case '4':
+                    Console.WriteLine("4");
+                    break;
+                case '5':
+                    Console.WriteLine("5");
+                    break;
+                case '6':
+                    Console.WriteLine("6");
+                    break;
+                case '7':
+                    Console.WriteLine("7");
+                    break;
+                case '8':
+                    Console.WriteLine("8");
+                    break;
+                case '9':
+                    Console.WriteLine("9");
+                    break;
+                case 'A':
+                case 'a':
+                    Console.WriteLine("10");
+                    break;
+                case 'B':
+                case 'b':
+                    Console.WriteLine("11");
+                    break;
+                case 'C':
+                case 'c':
+                    Console.WriteLine("12");
+                    break;
+                case 'D':
+                case 'd':
+                    Console.WriteLine("13");
+                    break;
+                case 'E':
+                case 'e':
+                    Console.WriteLine("14");
+                    break;
+                case 'F':
+                case 'f':
+                    Console.WriteLine("15");
+                    break;
+                default:
+                    Console.WriteLine("To nie jest cyfra szenstastkowa");
                     break;
             }
         }
