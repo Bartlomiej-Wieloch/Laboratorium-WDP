@@ -57,8 +57,8 @@
             int height = 12;
             int x = 79;
             int y = 22;
-            bool isOnBorder = (x == 56 || x == 79) && (y == 34 || y == 22);
-            
+            bool isOnBorder = (x == rx || x == rx + width) && (y == ry || y == ry - height);
+
             Console.WriteLine(isOnBorder);
         }
     }
