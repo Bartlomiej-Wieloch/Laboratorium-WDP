@@ -68,7 +68,6 @@
         {
             Console.WriteLine("\nZadanie 5\n");
 
-            double x = 1.34;
             double a = 1;
             double b = 2;
             double c = 1;
