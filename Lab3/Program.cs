@@ -1,4 +1,6 @@
-﻿namespace Lab3
+﻿using System;
+
+namespace Lab3
 {
     internal class Program
     {
@@ -144,6 +146,8 @@
 
         public static void Zadanie7()
         {
+            Console.WriteLine("\nZadanie 7\n");
+
             int decimalNumber = 11;
             switch (decimalNumber)
             {
@@ -218,6 +222,8 @@
 
         public static void Zadanie8()
         {
+            Console.WriteLine("\nZadanie 8\n");
+
             char hex = 'F';
             switch (hex)
             {
