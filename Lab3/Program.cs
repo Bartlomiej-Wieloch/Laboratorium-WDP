@@ -6,7 +6,8 @@
         {
             //Zadanie1();
             //Zadanie2();
-            Zadanie3();
+            //Zadanie3();
+            Zadanie4();
         }
 
         static void Zadanie1()
@@ -44,6 +45,21 @@
             bool isOutside = Math.Sqrt(Math.Pow(x - cx, 2) + Math.Pow(y - cy, 2)) > cradius;
 
             Console.WriteLine(isOutside);
+        }
+
+        static void Zadanie4()
+        {
+            Console.WriteLine("\nZadanie 4\n");
+
+            int rx = 56;
+            int ry = 34;
+            int width = 23;
+            int height = 12;
+            int x = 79;
+            int y = 22;
+            bool isOnBorder = (x == 56 || x == 79) && (y == 34 || y == 22);
+            
+            Console.WriteLine(isOnBorder);
         }
     }
 }
