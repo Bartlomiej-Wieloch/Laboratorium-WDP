@@ -8,7 +8,8 @@
             //Zadanie2();
             //Zadanie3();
             //Zadanie4();
-            Zadanie5();
+            //Zadanie5();
+            Zadanie6();
         }
 
         static void Zadanie1()
@@ -91,7 +92,53 @@
             {
                 Console.WriteLine("Nie można otrzymać pierwiastków rzeczywistych!");
             }
+        }
 
+        public static void Zadanie6()
+        {
+            Console.WriteLine("\nZadanie 6\n");
+
+            int code = 16;
+            int quantity = 50;
+            decimal price = 10m;
+
+            if (code < 10)
+            {
+                decimal sellPrice = price;
+                Console.WriteLine($"Price: {sellPrice}");
+            }
+            else if (code >= 10 && code <= 15)
+            {
+                decimal sellPrice = Math.Round((price * 0.95m), 2, MidpointRounding.AwayFromZero);
+                Console.WriteLine($"Price: {sellPrice}");
+            }
+            else
+            {
+                if (quantity <= 10)
+                {
+                    decimal sellPrice = Math.Round((price * 1.05m), 2, MidpointRounding.AwayFromZero);
+                    Console.WriteLine($"Price: {sellPrice}");
+                }
+                else if (quantity >= 11 && quantity <= 20)
+                {
+                    decimal sellPrice = price;
+                    Console.WriteLine($"Price: {sellPrice}");
+                }
+                else if (quantity > 20 && quantity < 100)
+                {
+                    decimal wholeNumbers = quantity / 10;
+                    decimal priceMultiplier = 1 - (wholeNumbers / 100);
+                    decimal sellPrice = price * priceMultiplier;
+
+                    Console.WriteLine($"price: {sellPrice}");
+                }
+                else if (quantity >= 100)
+                {
+                    decimal sellPrice = price - (price * 0.1m);
+                    Console.WriteLine($"Price: {sellPrice}");
+                }
+
+            }
         }
     }
 }
