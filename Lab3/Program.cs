@@ -7,7 +7,8 @@
             //Zadanie1();
             //Zadanie2();
             //Zadanie3();
-            Zadanie4();
+            //Zadanie4();
+            Zadanie5();
         }
 
         static void Zadanie1()
@@ -60,6 +61,37 @@
             bool isOnBorder = (x == rx || x == rx + width) && (y == ry || y == ry - height);
 
             Console.WriteLine(isOnBorder);
+        }
+
+        public static void Zadanie5()
+        {
+            Console.WriteLine("\nZadanie 5\n");
+
+            double x = 1.34;
+            double a = 1;
+            double b = 2;
+            double c = 1;
+
+            double delta = Math.Pow(b, 2) - 4 * a * c;
+            if (delta > 0)
+            {
+                double deltaRoot = Math.Sqrt(delta);
+
+                double x1 = (-b - deltaRoot) / 2 * a;
+                double x2 = (-b + deltaRoot) / 2 * a;
+
+                Console.WriteLine($"x1= {x1}, x2= {x2}");
+            }
+            if (delta == 0)
+            {
+                double x1 = (-b) / 2 * a;
+                Console.WriteLine($"x1,x2= {x1}");
+            }
+            if (delta < 0)
+            {
+                Console.WriteLine("Nie można otrzymać pierwiastków rzeczywistych!");
+            }
+
         }
     }
 }
