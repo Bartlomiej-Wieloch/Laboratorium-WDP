@@ -9,7 +9,8 @@
             //Zadanie3();
             //Zadanie4();
             //Zadanie5();
-            Zadanie6();
+            //Zadanie6();
+
         }
 
         static void Zadanie1()
@@ -57,8 +58,8 @@
             int ry = 34;
             int width = 23;
             int height = 12;
-            int x = 79;
-            int y = 22;
+            int x = 23;
+            int y = 11;
             bool isOnBorder = (x == rx || x == rx + width) && (y == ry || y == ry - height);
 
             Console.WriteLine(isOnBorder);
@@ -68,9 +69,9 @@
         {
             Console.WriteLine("\nZadanie 5\n");
 
-            double a = 1;
-            double b = 2;
-            double c = 1;
+            double a = 2.5;
+            double b = -0.5;
+            double c = 1.5;
 
             double delta = Math.Pow(b, 2) - 4 * a * c;
             if (delta > 0)
@@ -97,9 +98,9 @@
         {
             Console.WriteLine("\nZadanie 6\n");
 
-            int code = 16;
-            int quantity = 50;
-            decimal price = 10m;
+            int code = 4;
+            int quantity = 11;
+            decimal price = 3.5m;
 
             if (code < 10)
             {
@@ -136,7 +137,6 @@
                     decimal sellPrice = price - (price * 0.1m);
                     Console.WriteLine($"Price: {sellPrice}");
                 }
-
             }
         }
     }
