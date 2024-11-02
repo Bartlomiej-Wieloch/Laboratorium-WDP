@@ -22,7 +22,7 @@
             }
             else
             {
-                Console.WriteLine("Podano zbyt dużą ilość współczynnik");
+                Console.WriteLine("Podano zbyt dużą ilość współczynników");
             }
         }
     }
