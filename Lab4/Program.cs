@@ -1,5 +1,4 @@
-﻿using System.Linq;
-namespace Lab4
+﻿namespace Lab4
 {
     internal class Program
     {
@@ -8,7 +7,8 @@ namespace Lab4
             //Zadanie1();
             //Zadanie2();
             //Zadanie3();
-            Zadanie4();
+            //Zadanie4();
+            Zadanie5();
 
         }
 
@@ -16,7 +16,7 @@ namespace Lab4
         {
             double[] factors = { 2.4, 1.9, -0.5 };
             double x = 2.3;
-            
+
             if (factors.Length == 3 )
             {
                 Console.WriteLine(Math.Pow(x, 2)* factors[0] + x * factors[1] + factors[2]);
@@ -47,7 +47,7 @@ namespace Lab4
         //    { 
         //        int[] arr = new int[value];
         //        int i = 0;
-                
+
         //        for (i = 0; i<arr.Length; ++i )
         //        {
         //            Console.WriteLine(1);
@@ -69,6 +69,44 @@ namespace Lab4
                     Console.WriteLine(number);
                 }
             }
+        }
+
+        public static void Zadanie5()
+        {
+            do
+            {
+                Console.WriteLine("Podaj liczbę: ");
+                if (int.TryParse(Console.ReadLine(), out int number))
+                {
+                    if (number > 0)
+                    {
+                        for (int y = 0; y < number; ++y)
+                        {
+                            Console.WriteLine();
+                            for (int x = 0; x <= y; ++x)
+                            {
+                                Console.Write("#");
+                            }
+                        }
+                        Console.WriteLine();
+                        break;
+
+                    } 
+                    else if (number == 0)
+                    {
+                        Console.WriteLine("Podano prawidłową liczbę całkowitą ale trójkąt nie zostanie narysowany (nie istnieje trójkąt o boku 0)");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Podano liczbę ujemną!");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Nie wpisałeś liczby całkowitej!");
+                }
+            }
+            while (true);
         }
     }
 }
