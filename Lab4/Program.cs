@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Zadanie1();
+            //Zadanie1();
+            Zadanie2();
         }
 
         public static void Zadanie1()
@@ -23,6 +24,16 @@
             else
             {
                 Console.WriteLine("Podano zbyt dużą ilość współczynników");
+            }
+        }
+
+        public static void Zadanie2()
+        {
+            double[] arr = { 12.5, 6.7, 2.89, 19.1, 2.45 };
+
+            for (int i = arr.Length -1; i>=0; --i)
+            {
+                Console.WriteLine(arr[i]);
             }
         }
     }
