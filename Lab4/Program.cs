@@ -1,4 +1,5 @@
-﻿namespace Lab4
+﻿using System.Linq;
+namespace Lab4
 {
     internal class Program
     {
@@ -6,7 +7,9 @@
         {
             //Zadanie1();
             //Zadanie2();
-            Zadanie3();
+            //Zadanie3();
+            Zadanie4();
+
         }
 
         public static void Zadanie1()
@@ -38,19 +41,34 @@
             }
         }
 
-        public static void Zadanie3()
+        //public static void Zadanie3()
+        //{
+        //    while (int.TryParse(Console.ReadLine(), out int value))
+        //    { 
+        //        int[] arr = new int[value];
+        //        int i = 0;
+                
+        //        for (i = 0; i<arr.Length; ++i )
+        //        {
+        //            Console.WriteLine(1);
+        //        }
+        //       //Console.WriteLine($"Suma wynosi{}");
+        //    }
+        //    Console.WriteLine("Nie wpisałeś liczby całkowitej!");
+        //}
+
+        public static void Zadanie4()
         {
-            while (int.TryParse(Console.ReadLine(), out int value))
+            double[,] arr = { { 1.1, 3.5, 2.56 }, { 1.4, 34, 7, }, { 1.5, 56, 2.6 } };
+            double b = 4.1;
+
+            foreach (var number in arr)
             {
-                int i = 0;
-                int[] arr = new int[value];
-                for (i = 0; i<arr.Length; ++i )
+                if (number>b)
                 {
-                    Console.WriteLine(1);
+                    Console.WriteLine(number);
                 }
-               //Console.WriteLine($"Suma wynosi{}");
             }
-            Console.WriteLine("Nie wpisałeś liczby całkowitej!");
         }
     }
 }
