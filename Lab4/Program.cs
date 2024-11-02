@@ -5,7 +5,8 @@
         static void Main(string[] args)
         {
             //Zadanie1();
-            Zadanie2();
+            //Zadanie2();
+            Zadanie3();
         }
 
         public static void Zadanie1()
@@ -35,6 +36,21 @@
             {
                 Console.WriteLine(arr[i]);
             }
+        }
+
+        public static void Zadanie3()
+        {
+            while (int.TryParse(Console.ReadLine(), out int value))
+            {
+                int i = 0;
+                int[] arr = new int[value];
+                for (i = 0; i<arr.Length; ++i )
+                {
+                    Console.WriteLine(1);
+                }
+               //Console.WriteLine($"Suma wynosi{}");
+            }
+            Console.WriteLine("Nie wpisałeś liczby całkowitej!");
         }
     }
 }
