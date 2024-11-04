@@ -1,4 +1,6 @@
-﻿namespace Lab4
+﻿using System.Runtime.InteropServices;
+
+namespace Lab4
 {
     internal class Program
     {
@@ -8,7 +10,8 @@
             //Zadanie2();
             //Zadanie3();
             //Zadanie4();
-            Zadanie5();
+            //Zadanie5();
+            Zadanie6();
 
         }
 
@@ -107,6 +110,28 @@
                 }
             }
             while (true);
+        }
+
+        public static void Zadanie6()
+        {
+            Console.Write("Podaj długość tablicy: ");
+            int n = int.Parse(Console.ReadLine());
+
+            double[] val = new double[n];
+
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write("Podaj wartość: ");
+                double values = double.Parse(Console.ReadLine());
+                val[i] = values;
+            }
+
+            Console.WriteLine();
+
+            for (int i = n - 1; i >= 0; i -= 2)
+            {
+                Console.WriteLine(val[i]);
+            }
         }
     }
 }
