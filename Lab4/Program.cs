@@ -1,6 +1,4 @@
-﻿using System.Runtime.InteropServices;
-
-namespace Lab4
+﻿namespace Lab4
 {
     internal class Program
     {
