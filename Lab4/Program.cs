@@ -9,12 +9,13 @@ namespace Lab4
         {
             //Zadanie1();
             //Zadanie2();
-            Zadanie3();
+            //Zadanie3();
             //Zadanie4();
             //Zadanie5();
             //Zadanie6();
             //Zadanie7();
             //Zadanie8();
+            Zadanie9();
             
             
 
@@ -183,6 +184,27 @@ namespace Lab4
                 length++;
             }
             Console.WriteLine($"Liczba cyfr {x} to {length}");
+        }
+
+        public static void Zadanie9()
+        {
+            Console.Write("Podaj wysokość trójkąta (n): ");
+            int n = int.Parse(Console.ReadLine());
+
+
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write(" ");
+                }
+
+                for (int j = 0; j < (2 * (n - i) - 1); j++)
+                {
+                    Console.Write("#");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
