@@ -1,4 +1,6 @@
-﻿namespace Lab4
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Lab4
 {
     internal class Program
     {
@@ -10,7 +12,9 @@
             //Zadanie4();
             //Zadanie5();
             //Zadanie6();
-            Zadanie7();
+            //Zadanie7();
+            Zadanie8();
+            
             
 
         }
@@ -166,6 +170,20 @@
                 }
                 Console.WriteLine();
             }
+        }
+
+        public static void Zadanie8()
+        {
+            long n = long.Parse(Console.ReadLine());
+            long x = n;
+
+            int length = 0;
+            while (n > 0) 
+            {
+                n /= 10;
+                length++;
+            }
+            Console.WriteLine($"Liczba cyfr {x} to {length}");
         }
     }
 }
