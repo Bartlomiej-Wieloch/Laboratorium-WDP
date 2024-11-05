@@ -9,7 +9,9 @@
             //Zadanie3();
             //Zadanie4();
             //Zadanie5();
-            Zadanie6();
+            //Zadanie6();
+            Zadanie7();
+            
 
         }
 
@@ -129,6 +131,40 @@
             for (int i = n - 1; i >= 0; i -= 2)
             {
                 Console.WriteLine(val[i]);
+            }
+        }
+
+        public static void Zadanie7()
+        {
+            Console.Write("Podaj szerokość :");
+            int n = int.Parse(Console.ReadLine());
+            Console.Write("Podaj wysokość :");
+            int m = int.Parse(Console.ReadLine());
+
+            char[,] tablica = new char[n, m];
+
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < m; j++)
+                {
+                    if (i == 0 || j == 0 || i == n - 1 || j == m - 1)
+                    {
+                        tablica[i, j] = '#';
+                    }
+                    else
+                    {
+                        tablica[i, j] = ' ';
+                    }
+                }
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < m; j++)
+                {
+                    Console.Write(tablica[i, j]);
+                }
+                Console.WriteLine();
             }
         }
     }
