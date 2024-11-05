@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Lab4
 {
@@ -8,12 +9,12 @@ namespace Lab4
         {
             //Zadanie1();
             //Zadanie2();
-            //Zadanie3();
+            Zadanie3();
             //Zadanie4();
             //Zadanie5();
             //Zadanie6();
             //Zadanie7();
-            Zadanie8();
+            //Zadanie8();
             
             
 
@@ -48,21 +49,19 @@ namespace Lab4
             }
         }
 
-        //public static void Zadanie3()
-        //{
-        //    while (int.TryParse(Console.ReadLine(), out int value))
-        //    { 
-        //        int[] arr = new int[value];
-        //        int i = 0;
+        public static void Zadanie3()
+        {
+            int suma = 0;
+            Console.Write("Podaj liczbę całkowitą: ");
+            while (int.TryParse(Console.ReadLine(), out int value))
+            {
+                Console.Write("Podaj liczbę całkowitą: ");
+                suma += value;
+            }
+            Console.WriteLine();
+            Console.WriteLine($"Suma = {suma}");
 
-        //        for (i = 0; i<arr.Length; ++i )
-        //        {
-        //            Console.WriteLine(1);
-        //        }
-        //       //Console.WriteLine($"Suma wynosi{}");
-        //    }
-        //    Console.WriteLine("Nie wpisałeś liczby całkowitej!");
-        //}
+        }
 
         public static void Zadanie4()
         {
